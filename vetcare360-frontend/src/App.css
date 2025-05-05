@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.img-spring-pivotal-logo {
+  width: 275px ;
+  height: auto;
+  margin-top: 50px;
+}
+ 
+table.table:not(.owner-info-table) th {
+    background-color: #34302d;
+    color: white; 
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+table.table th {
+  font-size: 20px;
+}
+
+table.table td {
+    font-size: 20px;
+}
+
+
+table.table th:last-child, table.table td:last-child {
+    border-right: none;
+}
+
+table.owner-info-table th:first-child,
+table.owner-info-table td:first-child {
+    font-weight: bold; 
+}
+
+table.owner-info-table th:not(:first-child),
+table.owner-info-table td:not(:first-child) {
+    font-weight: normal; 
+}
+
+label {
+    font-size: 20px;
+}
+.form-control {
+    height: 50px; 
+    padding: 10px; 
+    font-size: 18px; 
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid lightgray; 
+
+  }
+
+.form-control:hover {
+    border-color: #6db33f; 
+  }
+  
+.form-control:focus {
+    border-color: #6db33f;
+    box-shadow: 0 0 5px rgba(109, 179, 63, 0.5); 
+}
+
+  
+.find-owner-button, .add-owner-button, .add-pet-button, .edit-owner-button, .update-owner-button, .add-pet-button, .update-pet-button, .add-visit-button {
+    background-color: #34302d;
+    color: #ffffff; 
+    border: 2px solid #6db33f; 
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 18px; 
+    margin-top: 20px;
+    font-weight: 500;
+  }
+  
+  .find-owner-button:hover, .add-owner-button:hover, .add-pet-button:hover, .edit-owner-button:hover, .update-owner-button:hover, .update-pet-button:hover, .add-visit-button:hover {
+    background-color: #383431;
+    border-color: #6db33f; 
+    color: #ffffff; 
+  }
+  
+.pagination .page-link {
+    color: black ;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #34302d;
+  border-color: #34302d; 
+  color: white;
+  box-shadow: none; 
+
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d; 
+  pointer-events: none; 
+}
+
+.pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+  background-color: #f8f9fa; 
+  color: #34302d; 
+}
