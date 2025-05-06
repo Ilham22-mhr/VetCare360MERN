@@ -1,75 +1,72 @@
 .navbar {
-    border-top: 4px solid #6db33f;
-    background-color: #34302d;
-    margin-bottom: 50px;
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-  }
-  
-  .navbar a.navbar-brand {
-    display: flex;
-    align-items: center; 
-    text-decoration: none;
-    padding: 0;
-  }
-  
-  .navbar a.navbar-brand img {
-    width: 225px; 
-    height: auto;
-    margin-right: 10px; 
-  }
-  
-  .navbar a.navbar-brand span {
-    color: white; 
-    font-size: 1.2rem; 
-    font-weight: bold;
-  }
-  
-  .navbar .navbar-collapse {
-    justify-content: flex-start; 
-  }
-  
-  .navbar .navbar-nav {
-    margin-left: 0; 
-  }
-  
-  .navbar li > a, .navbar-text {
-    font-family: "montserratregular", sans-serif;
-    text-shadow: none;
-    font-size: 18px;
-    padding: 28px 20px;
-    transition: all 0.15s;
-    -webkit-transition: all 0.15s;
-    -moz-transition: all 0.15s;
-    -o-transition: all 0.15s;
-    -ms-transition: all 0.15s;
-  }
-  
-  .navbar li > a {
-    text-transform: uppercase;
-    color: white; 
-  }
-  
-  .navbar .navbar-text {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .navbar li:hover > a {
-    color: #eeeeee;
-    background-color: #6db33f;
-  }
-  
-  .navbar-toggle {
-    border-width: 0;
-  }
-  
-  .navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 3px;
-  }
-  
-  .navbar-toggle .icon-bar {
-    width: 19px;
-    height: 3px;
-  }
+  border-top: 4px solid #6db33f;
+  background-color: #34302d;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.navbar a.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0;
+}
+
+.navbar a.navbar-brand img {
+  width: 225px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: -20px;
+}
+.navbar-brand img[src*="mern-favicon"] {
+  width: 45px !important; /* Use !important as a last resort */
+  height: auto;
+  margin-right: -36px !important;
+  margin-top: -5px;
+}
+
+.navbar a.navbar-brand span {
+  color: white;
+  font-size: 1.5rem; 
+  font-weight: bold;
+}
+
+.navbar .navbar-collapse {
+  justify-content: flex-start;
+}
+
+.navbar .navbar-nav {
+  margin-left: 0;
+}
+
+.navbar li > a, .navbar-text {
+  font-family: "montserratregular", sans-serif;
+  text-shadow: none;
+  font-size: 20px; /* plus grand qu'avant */
+  font-weight: 600; /* rend le texte plus visible */
+  padding: 25px 25px; /* plus de padding horizontal */
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar li:hover > a {
+  color: #eeeeee;
+  background-color: #6db33f;
+}
+
+.navbar .navbar-text {
+  margin: 0;
+}
+
+.navbar-toggle {
+  border-width: 0;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+.navbar-toggle .icon-bar {
+  width: 19px;
+  height: 3px;
+}

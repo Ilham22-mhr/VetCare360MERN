@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";  
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap-icons/font/bootstrap-icons.css"; 
-import logo from '../assets/images/spring-logo-dataflow-mobile.png'; 
+import logo from '../assets/images/navbare-logo.png';
+import mernFavicon from '../assets/images/mern-favicon.png';
 import '../assets/styles/Menu.css'; 
+
 
 const MenuItem = ({ url, title, children }) => (
   <li className="nav-item">
@@ -21,7 +23,9 @@ const Menu = () => {
       <div className="container">
 
         <NavLink className="navbar-brand" to="/">
+          <img src={mernFavicon} alt="MERN Favicon"/>
           <img src={logo} alt="VetCare360 Logo" /> 
+          
         </NavLink>
 
         <div className="collapse navbar-collapse">

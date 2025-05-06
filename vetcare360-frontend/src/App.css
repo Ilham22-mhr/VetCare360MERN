@@ -42,12 +42,17 @@
   justify-content: center; 
 }
 
-.img-spring-pivotal-logo {
-  width: 275px ;
+.mern-logo {
+  width: 150px;  
   height: auto;
-  margin-top: 50px;
+  margin-top: 5px;
+  transition: transform 0.3s ease;
 }
- 
+
+.mern-logo:hover {
+  transform: scale(1.05);
+}
+
 table.table:not(.owner-info-table) th {
     background-color: #34302d;
     color: white; 
